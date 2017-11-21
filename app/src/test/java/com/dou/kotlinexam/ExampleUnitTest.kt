@@ -12,6 +12,19 @@ import org.junit.Assert.*
 class ExampleUnitTest {
 
     @Test
+    fun checkArray() {
+        val arr = ArrayList<String>()
+        arr.add("EN")
+        arr.add("FR")
+        arr.add("SIN")
+        arr.add("JP")
+        arr.add("KR")
+        
+        assertTrue(String.format("array is empty", arr.size > 0), arr.size > 0)
+//        assertTrue(String.format("%s is null or empty.", word), !word.isNullOrEmpty())
+    }
+
+    @Test
     fun checkIsNullOrEmpty() {
         var word: String? = null
 

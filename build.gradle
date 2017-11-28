@@ -19,6 +19,7 @@ allprojects {
     repositories {
         google()
         jcenter()
+        maven { url "https://www.jitpack.io" }
     }
 
     //Global variables for all modules. config here
@@ -29,7 +30,7 @@ allprojects {
         compileSdkVersion = 26
         supportLibVersion = '26.1.0'
         constraintVersion = '1.0.2'
-        ext.android_plugin_version = '3.0.0-alpha5'
+        android_plugin_version = '3.0.0-alpha5'
 
         mainApplicationId = 'com.dou.kotlinexam' //it is main application id. and not be changed
         flavorApplicationId = mainApplicationId //it is main application will be changed depend on build env.
@@ -38,6 +39,8 @@ allprojects {
         rxandroidVersion = '2.0.1'
         rxjava2Version = '2.1.0'
         retrofitVersion = '2.3.0'
+
+        dbFlowVersion = "4.1.2"
     }
 }
 

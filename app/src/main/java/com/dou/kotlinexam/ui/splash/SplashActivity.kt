@@ -1,4 +1,4 @@
-package com.dou.kotlinexam.ui
+package com.dou.kotlinexam.ui.splash
 
 import android.os.Bundle
 import com.dou.kotlinexam.R

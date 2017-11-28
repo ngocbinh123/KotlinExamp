@@ -29,7 +29,10 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+
+//    data binding
     kapt "com.android.databinding:compiler:$project.ext.android_plugin_version"
+
     implementation "com.android.support:appcompat-v7:$project.ext.supportLibVersion"
     implementation "com.android.support.constraint:constraint-layout:$project.ext.constraintVersion"
 
@@ -41,7 +44,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 
-    //    reactive - rxjava : http://reactivex.io/ || https://github.com/ReactiveX/RxJava
+//    reactive - rxjava : http://reactivex.io/ || https://github.com/ReactiveX/RxJava
     implementation "io.reactivex.rxjava2:rxjava:$project.ext.rxjava2Version"
     implementation "io.reactivex.rxjava2:rxandroid:$project.ext.rxandroidVersion"
     implementation "com.squareup.retrofit2:adapter-rxjava2:$project.ext.retrofitVersion"
@@ -49,8 +52,10 @@ dependencies {
 //    A type-safe HTTP client : http://square.github.io/retrofit/
     implementation "com.squareup.retrofit2:retrofit:$project.ext.retrofitVersion"
     implementation "com.squareup.retrofit2:converter-gson:$project.ext.retrofitVersion"
-}
 
-kapt {
-    generateStubs = true
+//    DBFlow -> database: https://github.com/Raizlabs/DBFlow
+    kapt "com.github.Raizlabs.DBFlow:dbflow-processor:$project.ext.dbFlowVersion"
+    compile "com.github.Raizlabs.DBFlow:dbflow-core:$project.ext.dbFlowVersion"
+    compile "com.github.Raizlabs.DBFlow:dbflow:$project.ext.dbFlowVersion"
+    compile "com.github.Raizlabs.DBFlow:dbflow-kotlinextensions:$project.ext.dbFlowVersion"
 }

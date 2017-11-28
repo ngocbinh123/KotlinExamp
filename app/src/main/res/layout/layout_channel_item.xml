@@ -9,7 +9,7 @@
             type="com.dou.kotlinexam.ui.root.IRootContract.Presenter"/>
         <variable
             name="item"
-            type="com.dou.kotlinexam.model.Channel"/>
+            type="com.dou.kotlinexam.database.model.Channel"/>
         <variable
             name="pos"
             type="int" />

@@ -1,4 +1,4 @@
-package com.dou.kotlinexam.model
+package com.dou.kotlinexam.database.model
 import com.google.gson.annotations.SerializedName
 
 

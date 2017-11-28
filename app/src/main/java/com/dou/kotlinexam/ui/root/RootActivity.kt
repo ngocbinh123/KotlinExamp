@@ -7,7 +7,7 @@ import android.support.v7.widget.LinearLayoutManager
 import android.view.View
 import com.dou.kotlinexam.R
 import com.dou.kotlinexam.base.BaseActivity
-import com.dou.kotlinexam.model.Channel
+import com.dou.kotlinexam.database.model.Channel
 import kotlinx.android.synthetic.main.activity_root.*
 
 /**

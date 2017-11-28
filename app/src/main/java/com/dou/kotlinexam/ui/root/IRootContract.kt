@@ -1,7 +1,7 @@
 package com.dou.kotlinexam.ui.root
 
 import com.dou.kotlinexam.base.ILifeCycle
-import com.dou.kotlinexam.model.Channel
+import com.dou.kotlinexam.database.model.Channel
 
 /**
  * Created by nnbinh on 11/27/17.

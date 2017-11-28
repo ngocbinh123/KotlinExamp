@@ -1,6 +1,6 @@
 package com.dou.kotlinexam.webApi
 
-import com.dou.kotlinexam.model.ChannelListResponse
+import com.dou.kotlinexam.database.model.ChannelListResponse
 import com.google.gson.GsonBuilder
 import io.reactivex.Observable
 import retrofit2.Retrofit

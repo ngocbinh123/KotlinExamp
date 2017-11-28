@@ -1,6 +1,6 @@
 package com.dou.kotlinexam.ui.root
 
-import com.dou.kotlinexam.model.Channel
+import com.dou.kotlinexam.database.model.Channel
 import com.dou.kotlinexam.webApi.ApiManager
 import com.dou.kotlinexam.webApi.ILoadItemCallback
 

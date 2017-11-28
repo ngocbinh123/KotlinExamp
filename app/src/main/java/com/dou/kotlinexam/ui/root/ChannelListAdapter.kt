@@ -6,7 +6,7 @@ import com.dou.kotlinexam.R
 import com.dou.kotlinexam.base.BaseRecyclerAdapter
 import com.dou.kotlinexam.base.BaseRecyclerViewHolder
 import com.dou.kotlinexam.databinding.LayoutChannelItemBinding
-import com.dou.kotlinexam.model.Channel
+import com.dou.kotlinexam.database.model.Channel
 
 /**
  * Created by nnbinh on 11/27/17.

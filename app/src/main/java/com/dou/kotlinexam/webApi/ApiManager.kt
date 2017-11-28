@@ -1,6 +1,6 @@
 package com.dou.kotlinexam.webApi
 
-import com.dou.kotlinexam.model.Channel
+import com.dou.kotlinexam.database.model.Channel
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 

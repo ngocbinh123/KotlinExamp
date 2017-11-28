@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="presenter"
+            type="com.dou.kotlinexam.ui.root.IRootContract.Presenter"/>
+        <variable
+            name="item"
+            type="com.dou.kotlinexam.model.Channel"/>
+        <variable
+            name="pos"
+            type="int" />
+        <import type="android.view.View"/>
+    </data>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        card_view:cardCornerRadius="@dimen/size_corner_radius"
+        style="@style/layoutListItem">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            style="@style/LayoutPadding">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/AppTheme.TextView.LsItemName"
+                    android:text="@{item.title}"
+                    tools:text="HBO"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/AppTheme.TextView"
+                    android:text="@{String.valueOf(item.stbNumber)}"
+                    tools:text="311"/>
+            </LinearLayout>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:checked="@{item.isFavorite}"
+                android:onClick="@{(view) -> presenter.changeItemState(item)}"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</layout>

@@ -8,4 +8,49 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--STYLE: TEXT VIEW -->
+    <style name="AppTheme.TextView">
+        <item name="android:textSize">@dimen/text_medium</item>
+    </style>
+
+    <style name="AppTheme.TextView.Label">
+        <item name="android:textSize">@dimen/text_xmedium</item>
+        <item name="android:layout_marginBottom">@dimen/size_margin_small</item>
+    </style>
+
+    <style name="AppTheme.TextView.LsItemName">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppTheme.EditText">
+        <item name="android:textSize">@dimen/text_large</item>
+        <item name="android:inputType">text</item>
+    </style>
+
+    <style name="AppTheme.TextInputLayout">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+    </style>
+
+    <style name="LayoutPaddingVertical">
+        <item name="android:layout_marginTop">@dimen/size_parent_padding_top</item>
+        <item name="android:layout_marginBottom">@dimen/size_parent_padding_bottom</item>
+    </style>
+
+    <style name="LayoutPaddingHorizontal">
+        <item name="android:paddingLeft">@dimen/size_parent_padding_left</item>
+        <item name="android:paddingRight">@dimen/size_parent_padding_right</item>
+    </style>
+
+    <style name="LayoutPadding" parent="@style/LayoutPaddingVertical">
+        <item name="android:paddingLeft">@dimen/size_parent_padding_left</item>
+        <item name="android:paddingRight">@dimen/size_parent_padding_right</item>
+    </style>
+
+    <style name="layoutListItem">
+        <item name="android:layout_marginLeft">@dimen/size_parent_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/size_parent_margin_right</item>
+        <item name="android:layout_marginTop">@dimen/size_parent_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/size_parent_margin_bottom</item>
+    </style>
 </resources>

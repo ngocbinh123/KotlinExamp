@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_small">9sp</dimen>
+    <dimen name="text_medium">14sp</dimen>
+    <dimen name="text_xmedium">16sp</dimen>
+    <dimen name="text_large">20sp</dimen>
+    <dimen name="text_xlarge">40sp</dimen>
+
+    <dimen name="size_parent_padding_top">10dp</dimen>
+    <dimen name="size_parent_padding_bottom">10dp</dimen>
+    <dimen name="size_parent_padding_left">15dp</dimen>
+    <dimen name="size_parent_padding_right">15dp</dimen>
+
+    <dimen name="size_parent_margin_top">10dp</dimen>
+    <dimen name="size_parent_margin_bottom">10dp</dimen>
+    <dimen name="size_parent_margin_left">15dp</dimen>
+    <dimen name="size_parent_margin_right">15dp</dimen>
+
+    <dimen name="size_margin_small">5dp</dimen>
+    <dimen name="size_margin_medium">10dp</dimen>
+    <dimen name="size_margin_large">15dp</dimen>
+
+    <dimen name="size_corner_radius">10dp</dimen>
+</resources>

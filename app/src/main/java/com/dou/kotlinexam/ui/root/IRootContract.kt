@@ -8,7 +8,7 @@ import com.dou.kotlinexam.database.model.Channel
  */
 interface IRootContract {
     interface View: ILifeCycle.View {
-        fun loadDataOnUI(channels: List<Channel>)
+        fun addMore(channel: Channel)
     }
 
     interface Presenter: ILifeCycle.Presenter {

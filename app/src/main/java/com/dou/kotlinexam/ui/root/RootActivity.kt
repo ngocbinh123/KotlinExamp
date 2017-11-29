@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
+import android.view.Menu
 import android.view.View
 import com.dou.kotlinexam.R
 import com.dou.kotlinexam.base.BaseActivity
@@ -54,12 +55,11 @@ class RootActivity : BaseActivity(), IRootContract.View {
 
     override fun getScreenCtx(): Context = this
 
-    override fun loadDataOnUI(channels: List<Channel>) {
-        mAdapter.data = channels
+    override fun addMore(channel: Channel) {
+        mAdapter.add(channel)
     }
 
     override fun showMessage(message: String) {
         showMessageByToast(message)
     }
-
 }

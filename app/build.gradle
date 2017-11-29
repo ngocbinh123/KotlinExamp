@@ -45,10 +45,10 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 
 //    reactive - rxjava : http://reactivex.io/ || https://github.com/ReactiveX/RxJava
-    implementation "io.reactivex.rxjava2:rxjava:$project.ext.rxjava2Version"
+//    implementation "io.reactivex.rxjava2:rxjava:$project.ext.rxjava2Version"
     implementation "io.reactivex.rxjava2:rxandroid:$project.ext.rxandroidVersion"
     implementation "com.squareup.retrofit2:adapter-rxjava2:$project.ext.retrofitVersion"
-
+    implementation "io.reactivex.rxjava2:rxkotlin:$project.ext.rxjava2Version"
 //    A type-safe HTTP client : http://square.github.io/retrofit/
     implementation "com.squareup.retrofit2:retrofit:$project.ext.retrofitVersion"
     implementation "com.squareup.retrofit2:converter-gson:$project.ext.retrofitVersion"

@@ -68,6 +68,16 @@ public abstract class BaseRecyclerAdapter<T> extends RecyclerView.Adapter<BaseRe
         }
     }
 
+    public void add(T item) {
+        if (isDataNullOrEmpty()) {
+            mData = new ArrayList<>();
+            mData.add(item);
+            notifyDataSetChanged();
+        }else {
+            mData.add(item);
+            notifyItemInserted(mData.size() -1);
+        }
+    }
     public void add(int index, T item) {
         if (item == null)
             return;
@@ -129,5 +139,9 @@ public abstract class BaseRecyclerAdapter<T> extends RecyclerView.Adapter<BaseRe
                     })
                     .start();
         }
+    }
+
+    private Boolean isDataNullOrEmpty() {
+        return  mData == null || mData.size() <= 0;
     }
 }

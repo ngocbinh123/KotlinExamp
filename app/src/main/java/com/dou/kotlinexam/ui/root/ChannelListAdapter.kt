@@ -17,10 +17,11 @@ class ChannelListAdapter(data: MutableList<Channel>?, val mPresenter:IRootContra
     }
 
     inner class ViewHolder (parent: ViewGroup?, layoutId: Int =  R.layout.layout_channel_item) : BaseRecyclerViewHolder<Channel>(parent, layoutId) {
-        val mBind: LayoutChannelItemBinding =  DataBindingUtil.bind(view)
+        private val mBind: LayoutChannelItemBinding =  DataBindingUtil.bind(view)
         override fun onBindItem(item: Channel?, position: Int) {
             mBind.item = item
             mBind.presenter = mPresenter
+            mBind.executePendingBindings()
         }
     }
 }

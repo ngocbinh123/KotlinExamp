@@ -5,6 +5,7 @@ import android.view.ViewGroup
 import com.dou.kotlinexam.R
 import com.dou.kotlinexam.base.BaseRecyclerAdapter
 import com.dou.kotlinexam.base.BaseRecyclerViewHolder
+import com.dou.kotlinexam.base.recyclerView.BaseViewHolder
 import com.dou.kotlinexam.databinding.LayoutChannelItemBinding
 import com.dou.kotlinexam.database.model.Channel
 
@@ -13,15 +14,16 @@ import com.dou.kotlinexam.database.model.Channel
  */
 class ChannelListAdapter(data: MutableList<Channel>?, val mPresenter:IRootContract.Presenter) : BaseRecyclerAdapter<Channel>(data) {
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): BaseRecyclerViewHolder<Channel> {
-        return  ViewHolder(parent)
+        return  ChannelHolder(parent)
     }
 
-    inner class ViewHolder (parent: ViewGroup?, layoutId: Int =  R.layout.layout_channel_item) : BaseRecyclerViewHolder<Channel>(parent, layoutId) {
-        private val mBind: LayoutChannelItemBinding =  DataBindingUtil.bind(view)
-        override fun onBindItem(item: Channel?, position: Int) {
+    inner class ChannelHolder(parent: ViewGroup, layoutId: Int = R.layout.layout_channel_item) : BaseViewHolder<Channel>(parent, layoutId) {
+        private val mBind: LayoutChannelItemBinding =  DataBindingUtil.bind(itemView)
+        override fun onBindItem(item: Channel, position: Int) {
             mBind.item = item
             mBind.presenter = mPresenter
             mBind.executePendingBindings()
         }
+
     }
 }

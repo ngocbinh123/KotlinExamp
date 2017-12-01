@@ -10,7 +10,7 @@
 
     <!--STYLE: TEXT VIEW -->
     <style name="AppTheme.TextView">
-        <item name="android:textSize">@dimen/text_medium</item>
+        <item name="android:textSize">@dimen/text_medium</item>d
     </style>
 
     <style name="AppTheme.TextView.Label">

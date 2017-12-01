@@ -20,6 +20,8 @@ public abstract class BaseRecyclerViewHolder<Type> extends RecyclerView.ViewHold
         super(itemView);
     }
 
+    public abstract void onBindItem(Type item, int position);
+
     public interface OnClickListener<Type> {
         void onItemClick(View view, Type item, int position);
     }
@@ -29,8 +31,6 @@ public abstract class BaseRecyclerViewHolder<Type> extends RecyclerView.ViewHold
         mItem = item;
         onBindItem(item, position);
     }
-
-    public abstract void onBindItem(Type item, int position);
 
     public View findById(int id) {
         if (this.itemView == null)
